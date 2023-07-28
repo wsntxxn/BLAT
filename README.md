@@ -2,7 +2,7 @@
 
 This repository provides codes and checkpoints for extracting audio and text representations using BLAT (**B**ootstrapping **L**anguage-**A**udio pre-training based on **T**ag-guided synthetic data) models.
 
-## Inference
+## Usage
 
 First install the missing dependencies: `pip install -r requirements`. Then download the pre-trained weights:
 ```bash
@@ -10,7 +10,7 @@ $ wget https://github.com/wsntxxn/AudioCaption/releases/download/v0.0.2/contrast
 ```
 
 Refer to `inference.py` for the usage:
-```python```
+```python
 from inference import load_blat, encode_audio, encode_text
 import numpy as np
 import torch
