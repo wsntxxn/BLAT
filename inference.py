@@ -67,7 +67,6 @@ def load_blat(ckpt_dir, device):
 def infer_sim(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model, text_tokenizer, max_length = load_blat(args.ckpt_dir, device)
-
     
     with torch.no_grad():
         audio_emb = encode_audio(model, args.audio, device)
