@@ -1,0 +1,9 @@
+numpy
+torch
+torchaudio
+einops
+timm
+torchlibrosa
+librosa
+zsvision
+transformers

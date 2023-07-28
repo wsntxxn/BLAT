@@ -1,0 +1,26 @@
+{
+    "model": {
+        "audio_encoder": {
+            "type": "models.audio_encoder.Cnn14",
+            "args": {
+                "sample_rate": 32000
+            }
+        },
+        "text_encoder": {
+            "type": "models.text_encoder.Bert",
+            "args": {
+                "model_type": "prajjwal1/bert-medium"
+            }
+        },
+        "type": "models.audio_text_model.AudioTextClip",
+        "args": {
+            "audio_dim": 2048,
+            "text_dim": 512,
+            "shared_dim": 1024
+        }
+    },
+    "text_tokenizer": {
+        "type": "prajjwal1/bert-medium",
+        "max_length": 30
+    }
+}
