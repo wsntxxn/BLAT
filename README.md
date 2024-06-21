@@ -27,8 +27,18 @@ with torch.no_grad():
     text_emb = encode_text(model, text_tokenizer, text, device, max_length)
 sim = np.matmul(audio_emb, text_emb.T)
 
-print(sim) # [[[[0.56612206 0.18251741 0.15569025]]
+print(sim) # [[0.56612206 0.18251741 0.15569025]]
 ```
 
 ## Citation
+If you find the model useful, please cite this paper:
+```BibTeX
+@inproceedings{xu2023blat,
+    title={Blat: Bootstrapping language-audio pre-training based on audioset tag-guided synthetic data},
+    author={Xu, Xuenan and Zhang, Zhiling and Zhou, Zelin and Zhang, Pingyue and Xie, Zeyu and Wu, Mengyue and Zhu, Kenny Q},
+    booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+    pages={2756--2764},
+    year={2023}
+}
+```
 
